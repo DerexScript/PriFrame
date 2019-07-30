@@ -17,7 +17,7 @@ class MainView {
     public const TITLE = "Projeto MVC";
 
     public function __construct($fileName, $header = "header", $footer = "footer") {
-        $this->setMenuItems(array("index", "sobre", "contato"));
+        $this->setMenuItems(array("index", "contact"));
         $this->setFileName($fileName);
         $this->setHeader($header);
         $this->setFooter($footer);

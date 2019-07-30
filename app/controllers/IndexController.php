@@ -16,7 +16,7 @@ class IndexController extends Controller {
     }
 
     public function executar() {
-        $this->getView()->render(array("titulo" => "Home"));
+        $this->getView()->render(array("titulo" => "Home", "myPage" => "index"));
     }
 
 }

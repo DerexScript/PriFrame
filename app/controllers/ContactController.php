@@ -18,7 +18,7 @@ class ContactController extends Controller {
     public function executar() {
         \system\core\Router::rota('contact', function() {
             $this->view = new \system\core\MainView("contact");
-            $this->view->render(array('titulo' => 'contact'));
+            $this->view->render(array('titulo' => 'contact', "myPage" => "contact"));
         });
     }
 
