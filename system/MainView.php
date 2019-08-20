@@ -1,6 +1,6 @@
 <?php
 
-namespace system\core;
+namespace system;
 
 /**
  * Description of MainView
@@ -12,12 +12,10 @@ class MainView {
     private $fileName;
     private $header;
     private $footer;
-    public $menuItems;
-
-    public const TITLE = "Projeto MVC";
+    private $menuItems;
 
     public function __construct($fileName, $header = "header", $footer = "footer") {
-        $this->setMenuItems(array("index", "contact"));
+        $this->setMenuItems(array("index"));
         $this->setFileName($fileName);
         $this->setHeader($header);
         $this->setFooter($footer);

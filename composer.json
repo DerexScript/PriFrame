@@ -1,11 +1,13 @@
 {
-    "name": "ThoWork/PriFrame",
-    "authors": [
-        {
-            "name": "DerexScript",
-            "email": "Derex@outlook.com.br"
-        }
-    ],
-    "require": {
-    }
+	"autoload":{
+		"psr-4":{
+			"app\\" : "app/",
+			"config\\" : "config/",
+			"system\\" : "system/"
+		},
+        "classmap": [
+            "config",
+            "system"
+        ]
+	}
 }
